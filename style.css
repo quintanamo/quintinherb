@@ -240,4 +240,7 @@ html, body {
 	font-size: 30px;
 	line-height: 26px;
     }
+    .overlayContent p {
+	line-height: 20px;
+    }
 }
