@@ -8,12 +8,19 @@
 	<meta name="author" content="Quintin Herb">
 	<meta name="description" content="Quintin Herb - Web developer, designer, student at York College of Pennsylvania">
 	<meta name="robots" content="index,follow">
-	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Contrail+One|Comfortaa|Overclock|Alegreya+SC" rel="stylesheet">
 </head>
 <body>
+
+	<div class="offerOverlay" id="offerOverlay">
+		<div class="overlayContent">
+			<h3>Need a professional method of contact for your clients to reach you?</h3>
+			<p>When you order a website through me, you will receive a custom email linked with your domain that can support up to 25 people!  The best part? It is a completely <b>FREE</b> added bonus!</p>
+			<div class="closeBtn" onclick="closeOverlay()">CLOSE</div>
+		</div>
+	</div>
 
 	<div class="copyright">&copy;2018 - QuintinHerb.com</div>
 
@@ -61,6 +68,14 @@
 			<span>quintin@quintinherb.net</span>
 		</div>
 	</div>
+
+
+	<script type="text/javascript">
+		function closeOverlay() {
+			var overlay = document.getElementById('offerOverlay');
+			overlay.style.display = "none";
+		}
+	</script>
 
 </body>
 </html>
