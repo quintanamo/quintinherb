@@ -44,7 +44,7 @@ html, body {
 	margin: 0;
 	text-transform: uppercase;
 	font-family: 'Comfortaa', cursive;
-	letter-spacing: -10px;
+	letter-spacing: -5px;
 	text-shadow: 0px 0px 14px #333;
 }
 
@@ -78,19 +78,60 @@ html, body {
 }
 
 .mainContent{
-	padding-top: 50px;
 	width: 100%;
 	background-color: #ffffff;
 	z-index: 10;
 	position: relative;
-	padding-bottom: 250px;
-	box-shadow: 0px -10px 20px #333;
+	box-shadow: 0px 0px 20px 10px #111;
+}
+
+.sectionA, .sectionB {
+	width: 100%;
+	padding: 100px 0;
+}
+
+.sectionA h3, .sectionB h3 {
+	color: #0099cc;
+	margin: 0;
+	font-size: 50px;
+	text-align: center;
+	font-family: 'Alegreya SC', serif;
+	padding-bottom: 50px;
+}
+
+.sectionA p, .sectionB p {
+	font-size: 20px;
+	color: #111;
+	width: 768px;
+	margin: 0 auto;
+	line-height: 30px;
+	text-align: justify;
+}
+
+.sectionA {
+	background-color: #f2f2f2;
+}
+
+.sectionB {
+	background-color: #e6e6e6;
+}
+
+#yourSiteImg {
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+#welcomePic {
+	width: 150px;
+	border-radius: 100% 100% 100% 100%;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 50px;
 }
 
 .footer {
 	width: 100%;
-	position: absolute;
-	bottom: 0;
 	background-color: #111;
 	color: #cccccc;
 	padding: 50px 0px;
@@ -110,47 +151,6 @@ html, body {
 	display: block;
 }
 
-.profileImg {
-	width: 200px;
-	border-radius: 50%;
-	display: block;
-	margin: 0px auto;
-	margin-bottom: 50px;
-	box-sizing: border-box;
-	background-color: #ffffff;
-}
-
-.profile {
-	width: 100%;
-}
-
-.profile h3 {
-	color: #111;
-	font-size: 80px;
-	text-align: center;
-	margin: 0;
-	margin-bottom: 40px;
-	font-family: 'Berkshire Swash', cursive;
-}
-
-.profile p {
-	color: #111;
-	font-size: 20px;
-	margin: 10px 200px;
-	text-align: justify;
-	line-height: 36px;
-}
-
-#yourSiteImg {
-	display: block;
-	margin: 0 auto;
-	width: 500px;
-}
-
-.socialContainer {
-	margin: 0 auto;
-}
-
 .socialIcon {
 	width: 95px;
 	border-radius: 50%;
@@ -168,34 +168,24 @@ html, body {
 	opacity: 0.6;
 }
 
-@media screen and (max-width: 768px) {
-    .profile p {
-    	margin: 10px 40px;
+@media screen and (max-width: 780px) {
+    .sectionA p, .sectionB p {
+    	width: auto;
+    	margin-left: 30px;
+    	margin-right: 30px
     }
     .pageHeader h3 {
     	font-size: 40px;
-    	letter-spacing: -2px;
+    	letter-spacing: 0px;
     }
     .pageHeader span {
     	font-size: 20px;
     	margin: 0px 10px;
-    }
-    .profile h3 {
-    	font-size: 50px;
-    }
-    .profile {
-    	border-top: 100% solid rgba(0,0,0,0);
     }
     .pageHeader {
     	position: fixed;
     }
     #yourSiteImg {
     	width: 300px;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    .profile p {
-    	margin: 10px 350px;
     }
 }
