@@ -236,4 +236,7 @@ html, body {
     #yourSiteImg {
     	width: 300px;
     }
+    .overlayContent h3 {
+	font-size: 30px;
+	line-height: 26px;
 }
