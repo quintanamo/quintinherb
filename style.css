@@ -134,12 +134,19 @@ html, body {
 		left: auto;
 		top: auto;
 		bottom: auto;
+		background-color: rgba(17,17,17,0.6);
 	}
 	#lastBox {
-		height: 220vh;
+		height: 300vh;
 	}
 	.ratesBox {
 		display: block;
+	}
+	.textContainer h6 {
+		font-size: 30px;
+	}
+	.textContainer p {
+		font-size: 16px;
 	}
 }
 
