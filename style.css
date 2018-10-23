@@ -134,6 +134,7 @@ html, body {
 		left: auto;
 		top: auto;
 		bottom: auto;
+		background-color: rgba(17,17,17,0.4);
 	}
 	#lastBox {
 		height: 300vh;
