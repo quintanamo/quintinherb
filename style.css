@@ -31,18 +31,18 @@ html, body {
 	min-height: 100vh;
 	position: relative;
 	display: block;
-	background-size: cover;
+	background-size: contain;
 	background-attachment: fixed;
 }
 
 #img1 {
-	background-image: url('bgimg1.jpeg');
+	background-image: url('bgimg1.jpg');
 }
 #img2 {
 	background-image: url('bgimg2.jpg');
 }
 #img3 {
-	background-image: url('bgimg3.png');
+	background-image: url('bgimg3.jpg');
 }
 
 .innerContainer {
@@ -134,7 +134,6 @@ html, body {
 		left: auto;
 		top: auto;
 		bottom: auto;
-		background-color: rgba(17,17,17,0.6);
 	}
 	#lastBox {
 		height: 300vh;
