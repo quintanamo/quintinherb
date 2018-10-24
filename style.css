@@ -150,6 +150,9 @@ html, body {
 		background-color: rgba(17,17,17,0.75);
 		text-shadow: 1px 1px 4px #111;
 	}
+	.textContainer p {
+		margin: 0 auto;
+	}
 	#lastBox {
 		height: 300vh;
 	}
