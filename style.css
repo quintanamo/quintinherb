@@ -6,7 +6,8 @@ html, body {
 
 .topNav {
 	width: 100%;
-	background-color: rgba(17,17,17,0.9);
+	background-color: #f2f2f2;
+	box-shadow: -2px 4px 8px #222;
 	position: fixed;
 	z-index: 5;
 }
@@ -14,7 +15,7 @@ html, body {
 .topNav .left {
 	padding: 20px 20px;
 	font-size: 20px;
-	color: #f2f2f2;
+	color: #111;
 	text-decoration: none;
 	display: inline-block;
 	font-family: sans-serif;
@@ -22,9 +23,21 @@ html, body {
 }
 
 .topNav .left:hover {
-	background-color: rgba(30,30,30,0.9);
+	opacity: 0.75;
 }
 
+.topNav .right {
+	height: 40px;
+	padding: 10px;
+	border-radius: 100%;
+	display: inline-block;
+	float: right;
+	transition: 0.2s;
+}
+
+.topNav .right:hover {
+	opacity: 0.75;
+}
 
 .titleContainer {
 	width: 100%;
@@ -134,7 +147,8 @@ html, body {
 		left: auto;
 		top: auto;
 		bottom: auto;
-		background-color: rgba(17,17,17,0.4);
+		background-color: rgba(17,17,17,0.75);
+		text-shadow: 1px 1px 4px #111;
 	}
 	#lastBox {
 		height: 300vh;
