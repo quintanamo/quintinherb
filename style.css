@@ -14,31 +14,16 @@ html, body {
 	top: 0;
 }
 
-.topNav .left {
-	padding: 20px 20px;
-	font-size: 20px;
-	color: #111;
-	text-decoration: none;
-	display: inline-block;
-	font-family: sans-serif;
-	transition: 0.2s;
-}
-
-.topNav .left:hover {
-	opacity: 0.75;
-	transform: scale(1.1);
-}
-
-.topNav .right {
+.topNav .socialLinks {
 	height: 40px;
 	padding: 10px;
 	border-radius: 100%;
 	display: inline-block;
-	float: right;
+	margin: 0 auto;
 	transition: 0.2s;
 }
 
-.topNav .right:hover {
+.topNav .socialLinks:hover {
 	opacity: 0.75;
 	transform: scale(1.1);
 }
