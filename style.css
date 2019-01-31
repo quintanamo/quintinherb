@@ -97,7 +97,7 @@ html, body {
 	line-height: 40px;
 	font-family: 'Lato', sans-serif;
 }
-
+/*
 .ratesBox {
 	position: relative;
 	width: 300px;
@@ -138,7 +138,7 @@ html, body {
 	text-align: center;
 	text-decoration: line-through;
 }
-
+*/
 @media screen and (max-width: 970px) {
 	.ratesBox {
 		display: block;
