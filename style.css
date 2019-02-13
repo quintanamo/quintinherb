@@ -162,6 +162,10 @@ html, body {
 		left: 0;
 		transform: translate(0,-50%);
 	}
+	#newlinks a {
+		width: 100%;
+		display: block;
+	}
 	.content p {
 		width: auto;
 		padding-right: 50px;
