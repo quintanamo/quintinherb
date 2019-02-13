@@ -168,6 +168,9 @@ html, body {
 		display: block;
 		margin: 0;
 	}
+	#newlinks a:hover, .navbar .navlinks a:hover {
+		border-bottom: 0px solid transparent;
+	}
 	.content p {
 		width: auto;
 		padding-right: 50px;
