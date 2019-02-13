@@ -1,114 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Quintin Herb - Web Developer</title>
-	<link charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="Website,Web,Developer,Dev,Design,Designer,HTML,CSS,JavaScript,jQuery,Front,End,Personal,Quintin,Herb">
-	<meta name="author" content="Quintin Herb">
-	<meta name="description" content="Quintin Herb - Web developer, designer, student at York College of Pennsylvania.  Interested in getting your business onto the web?  Learn how you can get a domain, hosting, and e-mails all in one package!">
-	<meta name="robots" content="index,follow">
+	<title>Quintin Herb | Web Developer</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
 
-		<div class="topNav">
-			<a href="https://twitter.com/realquintanamo"><img src="twitter.jpg" class="socialLinks"></a>
-			<a href="https://www.youtube.com/channel/UCq2a-jwZbSyW36fmj3_W0rw"><img src="youtube.jpg" class="socialLinks"></a>
-			<a href="https://www.linkedin.com/in/quintinherb"><img src="linkedin.jpg" class="socialLinks"></a>
-			<div style="color: #999999; text-align: center; padding-top: 4px;" id="navArrow">&#9662;</div>
-		</div>
-
-	<div class="imageBox" style="background-image: url(AbstractPatternA.png); padding-top: 60px;">
-		<div class="textBox">
-			<h6>QUINTIN HERB</h6>
-			<p>Developer.  Designer.  Student.</p>
-		</div>
-	</div>
-
-	<div class="contentBox">
-		<h6>Hello</h6>
-		<p>My name is Quintin, and I am a freelance front-end website developer. I am currently a sophomore Computer Science student at York College of Pennsylvania.</p>
-		<p><a href="resume.pdf" style="color: #f2f2f2; font-style: italic;" download="Quintin-Herb-resume">Click here to download my r&eacute;sum&eacute;</a></p>
-	</div>
-
-	<div class="imageBox" style="background-image: url(AbstractPatternB.png);">
-		<div class="textBox">
-			<h6>CUSTOM WEBSITES</h6>
-			<p>Tailored to you.</p>
-		</div>
-	</div>
-
-	<div class="contentBox">
-		<h6>What I Do</h6>
-		<p>I am currently interested in applying my development and design experience for those who want to increase their online presence with a professional, sleek-looking website.</p>
-		<p>Interested?  Contact me at <a href="mailto:quintin@quintinherb.net" style="text-decoration: underline;color: #f2f2f2;font-style: italic;">quintin@quintinherb.net</a>.</p>
-	</div>
-    <!-- 
-	<div class="imageBox" style="background-image: url(AbstractPatternC.png);">
-		<div class="textBox">
-			<h6>VALUE</h6>
-			<p>Different packages for different needs.</p>
-		</div>
-	</div>
-
-	<div class="contentBox">
-		<h6>Pricing</h6>
-		<center>
-			<div class="ratesBox">
-				<h6>Basic</h6>
-				<p>
-					One page <br>
-					Five images <br>
-					Customizable <br>
-					Maintenance<br>
-					<br>
-					<br>
-					<br>
-					<span class="wasPrice">$299.99</span><br>
-					<span class="price">$199.99!</span>
-				</p>
+	<!--  This is the header, it contains stuff found in the header-->
+	<div class="navbar">
+		<div class="container">
+			<h2>Quintin Herb</h2>
+			<div class="navlinks" id="navlinks">
+				<a href="#aboutMe">About Me</a>
+				<a href="#whatIDo">What I Do</a>
+				<a href="#myExperience">My Experience</a>
 			</div>
-			<div class="ratesBox">
-				<h6>Pro</h6>
-				<p>
-					Three pages <br>
-					Fifteen images <br>
-					Customizable <br>
-					Maintenance<br>
-					Integrated e-mail <br>
-					<br>
-					<br>
-					<span class="wasPrice">$499.99</span><br>
-					<span class="price">$249.99!</span>
-				</p>
-			</div>
-			<div class="ratesBox">
-				<h6>Premium</h6>
-				<p>
-					Unlimited pages <br>
-					Fifty images <br>
-					Customizable <br>
-					Maintenance<br>
-					Integrated e-mail <br>
-					Domain <br>
-					Hosting <br>
-					<span class="wasPrice">$999.99</span><br>
-					<span class="price">$499.99!</span>
-				</p>
-			</div>
-			<p style="font-size: 12px; font-style: italic; line-height: 24px;">Hosting and domain services can be added to Basic and Pro packages for an annual fee of $99.99.</p>
-		</center>
+		</div>
 	</div>
-	-->
-	<div class="footer">
-		<p>Quintin Herb</p>
-		<p>Developer.  Designer.  Student.</p>
-		<p>quintin@quintinherb.net</p>
+	<div id="newlinks">
+		<a href="#aboutMe">About Me</a>
+		<a href="#whatIDo">What I Do</a>
+		<a href="#myExperience">My Experience</a>
 	</div>
+
+	<!--  This content is the about me section -->
+	<div class="content" id="aboutMe">
+		<h2>About Me</h2>
+		<img src="quintin.jpg" alt="This is supposed to be a picture of me, but I guess it didn't load." id="itME">
+		<p>My name is Quintin, and I am currently a sophomore Computer Science student at York College of Pennsylvania.  I am passionate about computers, writing, and hearing myself talk.  When I'm not occupied with schoolwork, I am an amateur table tennis champion, professional shower concert performer, and a motivated learner.  I also tutor fellow Computer Science students.</p>
+	</div>
+	<!--  This content is the what I do section -->
+	<div class="content" id="whatIDo">
+		<h2>What I Do</h2>
+		<p>I have an incomprehensibly huge passion for making websites.  From the early days of my uncle giving me a spiral-bound HTML book and making basic, plain web pages with blinding white backgrounds and unorganized, unstyled text to practicing every day after school during my senior year of high school, I have always had a love for seeing my concepts come to life on web pages.  Website development is one of the most fulfilling things I have ever done, and I feel that I will forever continue to adore it as a hobby.</p>
+		<p>I am interested in helping those seeking to imprint their presence online.  Whether you are a college student, startup, or small business, I am more than happy to discuss the possibilities with you!  If you would like more information or have any questions, please contact me at <a href="mailto:quintin@quintinherb.net" style="font-style: italic;">quintin@quintinherb.net</a>.</p>
+	</div>
+	<!--  This content is the my experience section -->
+	<div class="content" id="myExperience">
+		<h2>My Experience</h2>
+		<ul>Website Development:<br><br>
+			<li><a href="https://quintinherb.net/old_version1">First version of QuintinHerb.net</a></li>
+			<li><a href="https://quintinherb.net/old_version2">Second version of QuintinHerb.net</a></li>
+			<li><a href="https://amberwiesberg.com">AmberWiesberg.com</a></li>
+		</ul>
+		<p>In addition to website development, I have numerous projects, both for classes and personal, which I have detailed within my r&eacute;sum&eacute;.  You can click <a href="resume.pdf" style="font-style: italic;" download="Quintin-Herb_resume">here</a> to download or view it.</p>
+	</div>
+
+	<!--  This is the footer -->
+	<div class="footer">Quintin Herb<br>Web Developer<br>quintinherb.net<br>quintin@quintinherb.net</div>
+
+
+
+
+	<script type="text/javascript">
+		var elementPosition = $('#navlinks').offset();
+
+		    $(window).scroll(function () {
+		        if ($(window).scrollTop() > elementPosition.top) {
+		            $('#navlinks').css('display', 'none');
+		            $('#newlinks').css('display', 'block');
+		        } else {
+		            $('#navlinks').css('display', 'block');
+		            $('#newlinks').css('display', 'none');
+		        }
+		    });
+	</script>
 
 </body>
 </html>
