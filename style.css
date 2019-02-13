@@ -154,6 +154,7 @@ html, body {
 	.navbar .navlinks a {
 		width: 100%;
 		display: block;
+		margin: 0;
 	}
 	.navbar .container {
 		position: absolute;
@@ -165,6 +166,7 @@ html, body {
 	#newlinks a {
 		width: 100%;
 		display: block;
+		margin: 0;
 	}
 	.content p {
 		width: auto;
