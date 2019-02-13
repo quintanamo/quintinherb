@@ -142,3 +142,19 @@ html, body {
 	text-align: center;
 	line-height: 1.6;
 }
+
+@media screen and (max-width: 768px) {
+	.content h2 {
+		width: 100%;
+	}
+	.navbar h2 {
+		width: 100%;
+		font-size: 80px;
+	}
+	.navbar .navlinks {
+		width: 100%;
+	}
+	.content p {
+		width: 100%;
+	}
+}
