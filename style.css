@@ -151,7 +151,7 @@ html, body {
 		width: 100%;
 		font-size: 80px;
 	}
-	.navbar .navlinks {
+	.navbar .navlinks a {
 		width: 100%;
 	}
 	.content p {
@@ -166,5 +166,8 @@ html, body {
 		padding-left: 20px;
 		font-size: 20px;
 		width: auto;
+	}
+	.content ul li {
+		padding-left: 20px;
 	}
 }
