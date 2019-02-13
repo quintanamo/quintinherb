@@ -153,6 +153,7 @@ html, body {
 	}
 	.navbar .navlinks a {
 		width: 100%;
+		display: block;
 	}
 	.navbar .container {
 		position: absolute;
