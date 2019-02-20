@@ -2,79 +2,41 @@
 <html>
 <head>
 	<title>Quintin Herb | Web Developer</title>
-	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Abel|Patua+One|Teko:500" rel="stylesheet">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="Website,Web,Developer,Dev,Design,Designer,HTML,CSS,JavaScript,jQuery,Front,End,Personal,Quintin,Herb">
 	<meta name="author" content="Quintin Herb">
 	<meta name="description" content="Quintin Herb - Web developer, designer, student at York College of Pennsylvania.  Interested in getting your business onto the web?  Learn how you can get a domain, hosting, and e-mails all in one package!">
 	<meta name="robots" content="index,follow">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
 
-	<!--  This is the header, it contains stuff found in the header-->
-	<div class="navbar">
+	<a href="#scrollDown"><div id="title">
 		<div class="container">
 			<h2>Quintin Herb</h2>
-			<div class="navlinks" id="navlinks">
-				<a href="#aboutMe">About Me</a>
-				<a href="#whatIDo">What I Do</a>
-				<a href="#myExperience">My Experience</a>
-			</div>
+			<span>Developer and Designer</span>
 		</div>
-	</div>
-	<div id="newlinks">
-		<a href="#aboutMe">About Me</a>
-		<a href="#whatIDo">What I Do</a>
-		<a href="#myExperience">My Experience</a>
-	</div>
+		<font>^</font>
+	</div></a>
 
-	<!--  This content is the about me section -->
-	<div class="content" id="aboutMe">
-		<h2>About Me</h2>
-		<img src="quintin.jpg" alt="This is supposed to be a picture of me, but I guess it didn't load." id="itME">
+	<div class="content" id="scrollDown">
+		<h2>Hello!</h2>
+		<img src="quintin.jpg" id="itMe">
 		<p>My name is Quintin, and I am currently a sophomore Computer Science student at York College of Pennsylvania.  I am passionate about computers, writing, and hearing myself talk.  When I'm not occupied with schoolwork, I am an amateur table tennis champion, professional shower concert performer, and a motivated learner.  I also tutor fellow Computer Science students.</p>
 	</div>
-	<!--  This content is the what I do section -->
+
+	<div class="seperate"></div>
+
 	<div class="content" id="whatIDo">
 		<h2>What I Do</h2>
 		<p>I have an incomprehensibly huge passion for making websites.  From the early days of my uncle giving me a spiral-bound HTML book and making basic, plain web pages with blinding white backgrounds and unorganized, unstyled text to practicing every day after school during my senior year of high school, I have always had a love for seeing my concepts come to life on web pages.  Website development is one of the most fulfilling things I have ever done, and I feel that I will forever continue to adore it as a hobby.</p>
 		<p>I am interested in helping those seeking to imprint their presence online.  Whether you are a college student, startup, or small business, I am more than happy to discuss the possibilities with you!  If you would like more information or have any questions, please contact me at <a href="mailto:quintin@quintinherb.net" style="font-style: italic;">quintin@quintinherb.net</a>.</p>
 	</div>
-	<!--  This content is the my experience section -->
-	<div class="content" id="myExperience">
-		<h2>My Experience</h2>
-		<ul>Website Development:<br><br>
-			<li><a href="https://quintinherb.net/old_version1">First version of QuintinHerb.net</a></li>
-			<li><a href="https://quintinherb.net/old_version2">Second version of QuintinHerb.net</a></li>
-			<li><a href="https://amberwiesberg.com">AmberWiesberg.com</a></li>
-		</ul>
-		<p>In addition to website development, I have numerous projects, both for classes and personal, which I have detailed within my r&eacute;sum&eacute;.  You can click <a href="resume.pdf" style="font-style: italic;" download="Quintin-Herb_resume">here</a> to download or view it.</p>
-	</div>
 
-	<!--  This is the footer -->
-	<div class="footer">Quintin Herb<br>Web Developer<br>quintinherb.net<br>quintin@quintinherb.net</div>
-
-
-
-
-	<script type="text/javascript">
-		var elementPosition = $('#navlinks').offset();
-
-		    $(window).scroll(function () {
-		        if ($(window).scrollTop() > elementPosition.top) {
-		            $('#navlinks').css('display', 'none');
-		            $('#newlinks').css('display', 'block');
-		        } else {
-		            $('#navlinks').css('display', 'block');
-		            $('#newlinks').css('display', 'none');
-		        }
-		    });
-	</script>
+	<div class="footer">Quintin Herb<br>Developer and Designer<br>quintin@quintinherb.net</div>
 
 </body>
 </html>
