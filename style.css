@@ -16,7 +16,7 @@ html, body {
 	width: 100vw;
 	height: 100vh;
 	background-image: url('background-mobile.png');
-	background-size: contain;
+	background-size: cover;
 }
 
 #title {
