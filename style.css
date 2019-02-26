@@ -79,7 +79,7 @@ html, body {
 	margin: 0 auto;
 	width: 300px;
 	margin-bottom: 50px;
-	border-radius: 20px;
+	border-radius: 100%;
 	z-index: 5;
 }
 
