@@ -13,11 +13,10 @@ html, body {
 	display: none;
 	z-index: 1;
 	position: fixed;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	background-color: green;
 	background-image: url('background-mobile.png');
-	background-attachment: fixed;
 	background-size: cover;
 }
 
