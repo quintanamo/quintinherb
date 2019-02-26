@@ -10,7 +10,7 @@ html, body {
 }
 
 #mobile-background {
-	display: invisible;
+	display: none;
 	z-index: 1;
 	position: fixed;
 	top: 0;
