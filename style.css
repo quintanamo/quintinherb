@@ -10,12 +10,11 @@ html, body {
 }
 
 #mobile-background {
-	display: none;
+	display: invisible;
 	z-index: 1;
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background-color: green;
 	background-image: url('background-mobile.png');
 	background-size: cover;
 }
