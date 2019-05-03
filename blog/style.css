@@ -47,6 +47,7 @@ html, body {
 	width: 768px;
 	display: block;
 	margin: 0 auto;
+	padding-bottom: 90%;
 }
 
 .blog_list h2 {
@@ -85,7 +86,7 @@ html, body {
 	font-family: sans-serif;
 	padding: 50px 0;
 	line-height: 30px;
-	position: absolute;
+	position: relative;
 	bottom: 0;
 }
 
