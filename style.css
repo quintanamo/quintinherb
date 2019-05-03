@@ -106,8 +106,5 @@ html, body {
 @media screen and (max-width: 768px;) {
 	.section {
 		width: 100%;
-		box-sizing: border-box;
-		border-left: 10px solid #ffffff;
-		border-right: 10px solid #ffffff;
 	}
 }
