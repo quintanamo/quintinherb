@@ -89,7 +89,7 @@ html, body {
 	bottom: 0;
 }
 
-@media screen and (max-width: 768px;) {
+@media screen and (max-width: 768px) {
 	.blog_text {
 		width: 100%;
 		box-sizing: border-box;
