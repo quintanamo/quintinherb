@@ -1,5 +1,6 @@
 html, body {
 	width: 100%;
+	min-height: 100%;
 	margin: 0;
 	background-color: #ffffff;
 	scroll-behavior: smooth;
@@ -86,4 +87,16 @@ html, body {
 	line-height: 30px;
 	position: relative;
 	bottom: 0;
+}
+
+@media screen and (max-width: 768px;) {
+	.blog_text {
+		width: 100%;
+		box-sizing: border-box;
+		border-left: 10px solid #ffffff;
+		border-right: 10px solid #ffffff;
+	}
+	.blog_list {
+		width: 100%;
+	}
 }
