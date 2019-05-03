@@ -95,8 +95,8 @@ html, body {
 	.blog_text {
 		width: 100%;
 		box-sizing: border-box;
-		border-left: 10px solid #ffffff;
-		border-right: 10px solid #ffffff;
+		border-left: 20px solid #ffffff;
+		border-right: 20px solid #ffffff;
 	}
 	.blog_list {
 		width: 100%;
