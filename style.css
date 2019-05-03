@@ -107,4 +107,7 @@ html, body {
 	.section {
 		width: 100%;
 	}
+	.header {
+		height: 300px;
+	}
 }
