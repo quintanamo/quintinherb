@@ -1,0 +1,89 @@
+html, body {
+	width: 100%;
+	margin: 0;
+	background-color: #ffffff;
+	scroll-behavior: smooth;
+}
+
+.navbar {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 5;
+	background-color: rgb(33,33,33);
+	font-size: 0;
+}
+
+.navbar a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 20px;
+	color: #ffffff;
+	padding: 20px;
+	font-family: sans-serif;
+	transition: 0.3s;
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	box-sizing: border-box;
+}
+
+.navbar a:hover {
+	text-shadow: 0px 0px 2px #333;
+	border-bottom: 3px solid #ffffff;
+	border-top: 3px solid #ffffff;
+}
+
+.page_title {
+	text-align: center;
+	margin: 50px auto;
+	padding-top: 50px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 40px;
+	font-weight: normal;
+}
+
+.blog_list {
+	width: 768px;
+	display: block;
+	margin: 0 auto;
+}
+
+.blog_list h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 20px 0;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+.blog_list li {
+	font-family: 'Yrsa', serif;
+	font-size: 20px;
+	color: #333;
+}
+
+.blog_text {
+	width: 768px;
+	margin: 10px auto;
+	display: block;
+	font-size: 20px;
+	font-family: 'Yrsa', serif;
+	color: #333;
+	text-indent: 40px;
+}
+
+.last {
+	margin-bottom: 50px;
+}
+
+.footer {
+	width: 100%;
+	background-color: rgb(33,33,33);
+	text-align: center;
+	font-size: 14px;
+	color: #f0f0f0;
+	font-family: sans-serif;
+	padding: 50px 0;
+	line-height: 30px;
+	position: relative;
+	bottom: 0;
+}
