@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cornhole Scorer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<div class="header">
+		<h1>Cornhole Scorer</h1>
+	</div>
+
+	<div class="form">
+		<h2>Team 1:</h2>
+		Bags in hole:<br><input type="number" name="teamABagsIn" id="teamABagsIn" value="0"><br>
+		Bags on board:<br><input type="number" name="teamABagsOn" id="teamABagsOn" value="0">
+		<h2>Team 2:</h2>
+		Bags in hole:<br><input type="number" name="teamBBagsIn" id="teamBBagsIn" value="0"><br>
+		Bags on board:<br><input type="number" name="teamBBagsOn" id="teamBBagsOn" value="0"><br><br>
+		<button onclick="addScore()">Add Score</button>
+	</div>
+
+	<div id="currentScore">
+		<h2>Current Score:</h2>
+		<h3>Team 1: <span id="teamAScore">0</span></h3>
+		<h3>Team 2: <span id="teamBScore">0</span></h3>
+		<h1 id="winner"></h1>
+	</div>
+
+	<script type="text/javascript">
+		
+		function addScore() {
+
+			var teamAScore = parseInt(document.getElementById("teamAScore").innerHTML);
+			var teamBScore = parseInt(document.getElementById("teamBScore").innerHTML);
+
+			if(teamAScore < 21 && teamBScore < 21){
+				var teamABagsIn = parseInt(document.getElementById("teamABagsIn").value);
+				var teamABagsOn = parseInt(document.getElementById("teamABagsOn").value);
+
+				var teamBBagsIn = parseInt(document.getElementById("teamBBagsIn").value);
+				var teamBBagsOn = parseInt(document.getElementById("teamBBagsOn").value);
+
+				var AScoreTemp = (teamABagsIn * 3) + teamABagsOn;
+				var BScoreTemp = (teamBBagsIn * 3) + teamBBagsOn;
+
+				if(AScoreTemp != BScoreTemp){
+					if(AScoreTemp > BScoreTemp){
+						AScoreTemp = AScoreTemp - BScoreTemp;
+						teamAScore = teamAScore + AScoreTemp;
+						document.getElementById("teamAScore").innerHTML = teamAScore.toString();
+					}
+					if(BScoreTemp > AScoreTemp){
+						BScoreTemp = BScoreTemp - AScoreTemp;
+						teamBScore = teamBScore + BScoreTemp;
+						document.getElementById("teamBScore").innerHTML = teamBScore.toString();
+					}
+				}
+			}
+			if(teamAScore >= 21){
+				document.getElementById("winner").innerHTML = "Team 1 is the winner!";
+			}
+			if(teamBScore >= 21){
+				document.getElementById("winner").innerHTML = "Team 2 is the winner!";
+			}
+
+			document.getElementById("teamABagsIn").value = "0";
+			document.getElementById("teamABagsOn").value = "0";
+			document.getElementById("teamBBagsIn").value = "0";
+			document.getElementById("teamBBagsOn").value = "0";
+
+		}
+
+	</script>
+
+</body>
+</html>

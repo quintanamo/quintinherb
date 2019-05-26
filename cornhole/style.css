@@ -1,0 +1,54 @@
+html, body {
+	width: 100%;
+	margin: 0;
+	background-color: #beeef7;
+}
+
+.header {
+	width: 100%;
+	padding: 20px 0;
+	background-color: #373a6d;
+}
+
+.header h1 {
+	color: #ffffff;
+	text-align: center;
+	margin: 0;
+	font-family: sans-serif;
+	font-size: 7vw;
+	font-weight: normal;
+}
+
+.form {
+	margin: 0;
+	line-height: 30px;
+	font-weight: normal;
+	color: #333333;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+#currentScore {
+	margin-top: 40px;
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+	color: #222222;
+	font-family: sans-serif;
+}
+
+#currentScore h2 {
+	margin: 0;
+	font-size: 5vw;
+	font-weight: normal;
+}
+
+#currentScore h3 {
+	font-size: 30px;
+	margin: 10px;
+	font-weight: normal;
+}
+
+#winner {
+	color: #999900;
+}
