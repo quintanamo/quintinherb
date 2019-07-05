@@ -211,7 +211,7 @@ html, body {
 	float: right;
 	display: inline-block;
 	background-color: rgba(50,50,50,0.85);
-	padding: 10px 2px;
+	padding: 20px 10px;
 	border-radius: 0 5px 5px 0;
 }
 
