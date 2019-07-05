@@ -181,6 +181,7 @@ html, body {
 	.content p {
 		padding: 0px 20px;
 		box-sizing: border-box;
+		font-size: 14pt;
 	}
 	.projects {
 		height: auto;
@@ -201,5 +202,11 @@ html, body {
 	}
 	.header h1 {
 		font-size: 40pt;
+	}
+	.project-description h1 {
+		font-size: 18pt;
+	}
+	.project-description p {
+		font-size: 14pt;
 	}
 }
