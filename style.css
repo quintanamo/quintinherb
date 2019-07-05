@@ -115,7 +115,7 @@ html, body {
 
 .project-description p {
 	margin: 14px;
-	font-family: justify;
+	text-align: justify;
 	font-size: 16pt;
 	line-height: 1.6;
 	color: #ffffff;
@@ -182,6 +182,39 @@ html, body {
 	font-size: 10pt;
 }
 
+#sidebar {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 20;
+	left: -70px;
+	transition: 0.3s ease;
+}
+
+#sidebar .links {
+	width: 70px;
+	background-color: rgba(50,50,50,0.85);
+	display: inline-block;
+	border-radius: 0 0 5px 0;
+	padding-bottom: 10px;
+}
+
+.links img {
+	width: 50px;
+	display: block;
+	margin-left: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+#sidebar .button {
+	float: right;
+	display: inline-block;
+	background-color: rgba(50,50,50,0.85);
+	padding: 10px 2px;
+	border-radius: 0 5px 5px 0;
+}
+
 @media screen and (max-width: 800px) {
 	.content {
 		width: 100%;
@@ -217,4 +250,7 @@ html, body {
 	.project-description p {
 		font-size: 14pt;
 	}
+	.project-name:hover {
+	letter-spacing: 0px;
+}
 }
