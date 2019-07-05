@@ -75,7 +75,7 @@ html, body {
 .projects {
 	width: 100%;
 	display: block;
-	height: 400px;
+	height: 500px;
 	background-color: #00ffcc;
 	background: linear-gradient(180deg, #00ffcc 0%, #00ffcc 20%, #4dffdb 100%);
 	font-size: 0;
