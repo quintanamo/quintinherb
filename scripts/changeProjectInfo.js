@@ -33,5 +33,9 @@ function changeProjectInfo(title) {
 		projectDescription.innerHTML = 'A simple Java game developed as an assignment for CS201 to explore and practice the concepts of object-oriented programming. The player attempts to place as many disks in a given area within the allotted time. The allotted time decreases with each disk placed. If the player runs out of time, overlaps disks, or places a disk out of bounds, the game ends.';
 		projectLink.href = 'https://quintinherb.net/downloads/projects/DiskGame.jar';
 	}
+	if (title.innerHTML == 'Virtual Keyboard') {
+		projectDescription.innerHTML = 'A full QWERTY keyboard that automatically gets inserted in the user\'s document wherever they declare it.  It also automatically detects and configures inputs to work with the keyboard.  Instructions are provided in the Github repository (click "Download" below to go to it).';
+		projectLink.href = 'https://github.com/quintanamo/virtual-keyboard';
+	}
 
 }
