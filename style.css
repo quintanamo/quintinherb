@@ -101,6 +101,13 @@ html, body {
 	overflow: hidden;
 	box-sizing: border-box;
 	background-color: rgba(0,0,0,0.2);
+	animation: fade-box 0.8s;
+	opacity: 1;
+}
+
+@keyframes fade-box {
+	0%	{opacity: 0;}
+	100%	{opacity: 1;}
 }
 
 .project-description h1 {
