@@ -1,67 +1,121 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Quintin Herb</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans|Varela+Round&display=swap" rel="stylesheet"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
-	<meta name="keywords" content="quintin, herb, programming, programmer, college, student, intern, web, developer, designer, program, language, resume, skills, best, york, pennsylvania, johnson, controls, computer, science">
-	<meta name="author" content="Quintin Herb">
-	<meta name="description" content="Quintin Herb - Computer Science student at York College of Pennsylvania who is passionate about learning and programming.">
-	<meta name="robots" content="index,follow">
-</head>
-<body>
+    <head>
+        <title>Quintin Herb | Web Developer</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
 
-	<div id="sidebar">
-		<div class="links">
-			<a href="https://www.linkedin.com/in/quintinherb"><img src="linkedin.jpg"></a>
-			<a href="https://twitter.com/RealQuintanamo"><img src="twitter.jpg"></a>
-			<a href="https://www.youtube.com/channel/UCq2a-jwZbSyW36fmj3_W0rw/"><img src="youtube.jpg"></a>
-		</div>
-		<div class="button" onclick="moveSidebar(this)">&#9656;</div>
-	</div>
+        <div class="page-header">
+            <div class="header-content">
+                <h1>Hi, I'm Q<div id="animate-header">uintin</div></h1>
+                <div class="header-description">Let's build a vision together.</div>
+                <a href="#learn-more" class="header-button space-right">Learn More</a>
+                <a href="#contact" class="header-button">Contact</a>
+            </div>
+        </div>
 
-	<div class="header">
-		<h1>Quintin Herb</h1>
-		<img src="me.png" id="profile-img">
-	</div>
+        <div class="section" id="learn-more">
+            <h1>Languages I've Used</h1>
+            <hr>
+            <div class="languages-wrapper">
+                <div class="language-bar" style="width: 100%; background-color: #E54D26;">HTML</div>
+                <div class="language-bar" style="width: 98%; background-color: #3799D6;">CSS</div>
+                <div class="language-bar" style="width: 90%; background-color: #F1DA4E;">JavaScript</div>
+                <div class="language-bar" style="width: 79%; background-color: #3775A8;">Python</div>
+                <div class="language-bar" style="width: 70%; background-color: #639AD2;">C/C++</div>
+                <div class="language-bar" style="width: 85%; background-color: #672179;">C#</div>
+                <div class="language-bar" style="width: 95%; background-color: #E4312A;">Java</div>
+                <div class="language-bar" style="width: 60%; background-color: #777DB1;">PHP</div>
+            </div>
+        </div>
 
-	<div class="content">
-		<h1>Hello!</h1>
-		<p>I'm Quintin, but my friends call me Quintin. I am passionate about creating and I am motivated to learn as much as I can so that I may incorporate my knowledge into everything I do, be it programming, writing, or whatever hobby I've decided to pick up for the week!</p>
-		<p>Currently, I am enrolled at York College of Pennsylvania to pursue a bachelor's degree in Computer Science. In addition to my schedule of classes, I work as a tutor for the Fundamentals of Compuer Science II course.</p>
-	</div>
+        <div class="section">
+            <h1>My Projects</h1>
+            <hr>
+            <div class="projects-wrapper">
+                <div class="project-button" onclick="expandDescription('paint-program')">Paint Program<div class="expand-section">+</div></div>
+                <div class="project-description" id="paint-program">
+                    <b>Language: </b>C#<br>
+                    <b>Time Completed: </b>Spring 2019<br>
+                    <b>Description:</b><br>
+                    A simple sandbox paint application developed for a software engineering class project.  The user may change the shape, size, and color of their brush in addition to changing and clearing the background color.  The user may undo or redo their moves and may save their work when they're finished.
+                </div>
+                <div class="project-button" onclick="expandDescription('my-record-collection')">My Record Collection<div class="expand-section">+</div></div>
+                <div class="project-description" id="my-record-collection">
+                    <b>Language: </b>Java<br>
+                    <b>Time Completed: </b>Spring 2019<br>
+                    <b>Description:</b><br>
+                    A user-friendly record categorizor that keeps track of the catalog numbers, album titles, artist names, and years released of each record.  The user is easily able to add new records as well as delete existing ones.  The user may sort by album title, artist name, or year released.
+                </div>
+                <div class="project-button" onclick="expandDescription('virtual-keyboard')">Virtual Keyboard<div class="expand-section">+</div></div>
+                <div class="project-description" id="virtual-keyboard">
+                    <b>Language: </b>JavaScript<br>
+                    <b>Time Completed: </b>Summer 2019<br>
+                    <b>Description:</b><br>
+                    A pure vanilla JavaScript implementation of a virtual keyboard that gets generated at the user's discretion by automatically populating an element with a specified classname.  Each virtual keyboard will automatically link itself to whichever input box the user clicks.
+                </div>
+                <div class="project-button" onclick="expandDescription('hackman')">Hackman<div class="expand-section">+</div></div>
+                <div class="project-description" id="hackman">
+                    <b>Language: </b>QBasic<br>
+                    <b>Time Completed: </b>Fall 2018<br>
+                    <b>Description:</b><br>
+                    An experimental project to explore MS-DOS.  In the game, the user tries to guess a secret word by receiving hints for how close they are to the actual word.  For example, if the player guesses "ACE" and the worde is "APE", the likeness would display "2" for the "A" and "E".
+                </div>
+                <div class="project-button" onclick="expandDescription('disc-game')">Disc Game<div class="expand-section">+</div></div>
+                <div class="project-description" id="disc-game">
+                    <b>Language: </b>Java<br>
+                    <b>Time Completed: </b>Fall 2018<br>
+                    <b>Description:</b><br>
+                    A fundamentals of computer science class project to explore object-oriented programming concepts.  The player tries to place as many discs in a given space as possible.  The time to place a disc is decreased with each placement.  The player's score is displayed upon losing.
+                </div>
+            </div>
+        </div>
 
-	<div class="projects">
-		<div class="left">
-			<div class="project-list">
-				<h1>Projects:</h1>
-				<div class="project-name" onclick="changeProjectInfo(this)" style="border-right: 10px solid #ffffff;">MyRecordCollection</div>
-				<div class="project-name" onclick="changeProjectInfo(this)">Virtual Keyboard</div>
-				<div class="project-name" onclick="changeProjectInfo(this)">Java Timer</div>
-				<div class="project-name" onclick="changeProjectInfo(this)">Paint by Quintin</div>
-				<div class="project-name" onclick="changeProjectInfo(this)">Hackman</div>
-				<div class="project-name" onclick="changeProjectInfo(this)">Disk Game</div>
-			</div>
-		</div>
-		<div class="right">
-			<div class="project-description">
-				<h1 id="project-title">MyRecordCollection</h1>
-				<p id="project-description">A user-friendly interface developed in Java to organize a record collection. The program accepts inputs for the catalog number, title, artist, and release year of the record. The user may sort their collection based on title, artist, or year in addition to searching by album title or artist name.</p>
-				<a href="https://quintinherb.net/downloads/projects/MyRecordCollection.zip" id="project-link" target="_blank" >Download</a>
-			</div>
-		</div>
-	</div>
+        <div class="section">
+            <h1>About Me</h1>
+            <hr>
+            <img src="images/selfie.jpg" alt="If you can see this, something broke lol" class="responsive-selfie">
+            <table class="about-table">
+                <tr>
+                    <td class="left"><img src="images/selfie.jpg" alt="If you can see this, something broke lol"></td>
+                    <td class="right">
+                        My name is Quintin, and I am currently a full-time computer science student at York College of Pennsylvania.  I thoroughly enjoy devoting my time to the major and take every chance I can get to be involved with computer science outside of the classroom.<br>
+                        <br>I find website development to be the most appealing to me, but I generally simply enjoy problem solving on the computer.  I have a desire to become a web developer after graduation, but I am certainly always open to other exciting opportunities as well!<br>
+                        <br>Some of my personal interests are soccer, creative writing, music, and of course Taco Bell.  I am sorry to say that my favorite club is Arsenal (sorry to myself, that is).
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-	<div class="content">
-		<h1>Hire Me!</h1>
-		<p>Though I am a full-time college student, I would be delighted to continue practicing software development outside of the classroom.  Whether you're seeking somebody for freelance work, an employment opportunity, or a start up, it would be my pleasure to review and discuss any offers in addition to providing you with my r&eacute;sum&eacute;!  I may be contacted at <a href="mailto:quintin@quintinherb.net">quintin@quintinherb.net</a>.</p>
-	</div>
+        <div class="section" id="contact">
+            <h1>Contact</h1>
+            <hr>
+            <table class="contact-table">
+                <tr>
+                    <td class="left"><img src="images/email.png"></td>
+                    <td class="right"><a href="mailto:quintin@quintinherb.net">quintin@quintinherb.net</a></td>
+                </tr>
+                <tr>
+                    <td class="left"><img src="images/instagram.png"></td>
+                    <td class="right"><a href="https://www.instagram.com/realquintanamo/">realquintanamo</a></td>
+                </tr>
+                <tr>
+                    <td class="left"><img src="images/twitter.png"></td>
+                    <td class="right"><a href="https://twitter.com/RealQuintanamo">@RealQuintanamo</a></td>
+                </tr>
+            </table>
+        </div>
 
-	<div class="footer">Quintin Herb<br>QuintinHerb.net<br>quintin@quintinherb.net</div>
+        <div class="footer">
+            &copy; Quintin Herb<br>
+            quintin@quintinherb.net
+        </div>
 
-	<script type="text/javascript" src="scripts/changeProjectInfo.js"></script>
-	<script type="text/javascript" src="scripts/moveSidebar.js"></script>
-</body>
+        
+        <script src="scripts/animate-header.js"></script>
+        <script src="scripts/expand-project.js"></script>
+    </body>
 </html>
