@@ -260,7 +260,7 @@ html, body {
     }
     .about-table, .contact-table {
         width: 100%;
-        padding: 0 10px;
+        padding: 0 20px;
         box-sizing: border-box;
     }
     .about-table tr .left {
@@ -271,6 +271,7 @@ html, body {
     }
     .about-table tr .right {
         padding-left: 0;
+        font-size: 14pt;
     }
     .contact-table tr .left {
         width: 70px;
