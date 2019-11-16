@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find Us Food</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Find Us Food</h1>
+            <p><i>Let's not argue tonight, honey.</i></p>
+        </div>
+        <input id="search-bar" type="text" placeholder="Enter ZIP Code...">
+        <div id="postal-code-error">Please enter a valid ZIP code.</div>
+        <div id="preferences">
+            <h2>Restaurant Themes</h2>
+            <div id="theme-selections">
+                <div id="left"></div>
+                <div id="right"></div>
+            </div>
+        </div>
+        <button id="search-button" onclick="findRandomRestaurant()">Find a Random Restaurant</button>
+        <div id="modal">
+            <button id="go-back-button" onclick="goBack()">Go Back</button>
+            <h1 id="result">Result</h1>
+        </div>
+        <script src="scripts/populate-selections.js"></script>
+        <script src="scripts/places.js"></script>
+    </body>
+</html>
