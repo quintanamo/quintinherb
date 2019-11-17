@@ -127,12 +127,27 @@ html, body {
     cursor: pointer;
 }
 
-#result {
+.center-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+#result {
     margin: 0;
-    font-size: 36pt;
+    font-size: 40pt;
+    text-align: center;
+}
+
+#address {
+    margin: 20px 0;
+    font-size: 20pt;
+    text-align: center;
+}
+
+#is-open {
+    margin: 0;
+    font-size: 20pt;
     text-align: center;
 }

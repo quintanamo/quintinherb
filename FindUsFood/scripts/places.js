@@ -31,6 +31,8 @@ function findRandomRestaurant() {
         }
 
         let potentialRestaurants = [];
+        let address = "";
+        let isOpen = false;
 
         document.getElementById('postal-code-error').style.display = 'none';
         postalCode = JSON.parse(httpGet("https://geocoder.api.here.com/6.2/geocode.json?app_id=kiFe1HYbzqFRuMeKl1f3&app_code=yBj_wLCOe9Iw3Fbcf0S-kg&country=USA&postalcode="+postalCode));
@@ -38,18 +40,32 @@ function findRandomRestaurant() {
         let requestData = JSON.parse(httpGet("https://places.cit.api.here.com/places/v1/browse?in="+coordinates+";r=5000&q=restaurant&app_id=kiFe1HYbzqFRuMeKl1f3&app_code=yBj_wLCOe9Iw3Fbcf0S-kg"));
 
         for (let item of requestData.results.items) {
+
+            console.log(item);
             if (typesList.length > 0) {
                 if (item.tags) {
                     for (let type of typesList) {
                         for (let tag of item.tags) {
                             if (type.toLowerCase() == tag.id.toLowerCase() && !potentialRestaurants.includes(item.title)) {
-                                potentialRestaurants.push(item.title);
+                                let obj = {
+                                    name: item.title,
+                                    address: item.vicinity,
+                                    isOpen: item.isOpen
+                                }
+                                potentialRestaurants.push(obj);
                             }
                         }
                     }
                 }
             } else {
-                if (!potentialRestaurants.includes(item.title)) potentialRestaurants.push(item.title);
+                if (!potentialRestaurants.includes(item.title)) {
+                    let obj = {
+                        name: item.title,
+                        address: item.vicinity,
+                        isOpen: item.isOpen
+                    }
+                    potentialRestaurants.push(obj);
+                }
             }
         }
 
@@ -59,8 +75,13 @@ function findRandomRestaurant() {
             let randNum = Math.floor(Math.random() * potentialRestaurants.length);
             if (randNum < 0) randNum = 0;
             if (randNum > potentialRestaurants.length - 1) randnum = potentialRestaurants.length - 1;
-            let randomPlace = potentialRestaurants[randNum];
-            document.getElementById('result').textContent = randomPlace;
+            document.getElementById('result').textContent = potentialRestaurants[randNum].name;
+            document.getElementById('address').innerHTML = potentialRestaurants[randNum].address;
+            if (potentialRestaurants[randNum].isOpen) {
+                document.getElementById('is-open').textContent = "Open now";
+            } else {
+                document.getElementById('is-open').textContent = "Closed now";
+            }
             document.getElementById('modal').style.display = 'block';
         }
     }
