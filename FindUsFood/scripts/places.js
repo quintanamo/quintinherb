@@ -50,7 +50,9 @@ function findRandomRestaurant() {
                                 let obj = {
                                     name: item.title,
                                     address: item.vicinity,
-                                    isOpen: item.isOpen
+                                    isOpen: item.isOpen,
+                                    longitude: item.position[0],
+                                    latitude: item.position[1]
                                 }
                                 potentialRestaurants.push(obj);
                             }
@@ -62,7 +64,9 @@ function findRandomRestaurant() {
                     let obj = {
                         name: item.title,
                         address: item.vicinity,
-                        isOpen: item.isOpen
+                        isOpen: item.isOpen,
+                        longitude: item.position[0],
+                        latitude: item.position[1]
                     }
                     potentialRestaurants.push(obj);
                 }
@@ -77,6 +81,7 @@ function findRandomRestaurant() {
             if (randNum > potentialRestaurants.length - 1) randnum = potentialRestaurants.length - 1;
             document.getElementById('result').textContent = potentialRestaurants[randNum].name;
             document.getElementById('address').innerHTML = potentialRestaurants[randNum].address;
+            document.getElementById('address').href = "https://maps.google.com/?ll="+potentialRestaurants[randNum].longitude+","+potentialRestaurants[randNum].latitude;
             if (potentialRestaurants[randNum].isOpen) {
                 document.getElementById('is-open').textContent = "Open now";
             } else {

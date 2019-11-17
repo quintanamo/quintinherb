@@ -37,6 +37,7 @@ html, body {
     opacity: 0.6;
     transition: 0.3s ease;
     margin-bottom: 30px;
+    box-sizing: border-box;
 }
 
 #search-bar:focus {
@@ -144,10 +145,34 @@ html, body {
     margin: 20px 0;
     font-size: 20pt;
     text-align: center;
+    color: #000000;
+    display: block;
 }
 
 #is-open {
     margin: 0;
     font-size: 20pt;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) { 
+    #search-bar {
+        width: 80%;
+    }
+    #preferences {
+        width: 100%;
+    }
+    #search-button {
+        width: 80%;
+        font-size: 14pt;
+    }
+    #result {
+        font-size: 30pt;
+    }
+    #address, #is-open {
+        font-size: 14pt;
+    }
+    #left .themes {
+        margin-left: 20px;
+    }
 }
