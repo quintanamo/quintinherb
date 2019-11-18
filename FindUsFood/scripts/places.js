@@ -80,11 +80,7 @@ function findRandomRestaurant() {
             document.getElementById('result').textContent = potentialRestaurants[randNum].name;
             document.getElementById('address').innerHTML = potentialRestaurants[randNum].address;
             document.getElementById('address').href = "https://maps.google.com/?ll="+potentialRestaurants[randNum].longitude+","+potentialRestaurants[randNum].latitude;
-            if (potentialRestaurants[randNum].isOpen) {
-                document.getElementById('is-open').textContent = "Open now";
-            } else {
-                document.getElementById('is-open').textContent = "Closed now";
-            }
+            if (potentialRestaurants[randNum].isOpen) document.getElementById('is-open').textContent = "Open now";
             document.getElementById('modal').style.display = 'block';
         }
     }
