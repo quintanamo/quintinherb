@@ -40,8 +40,6 @@ function findRandomRestaurant() {
         let requestData = JSON.parse(httpGet("https://places.cit.api.here.com/places/v1/browse?in="+coordinates+";r=5000&q=restaurant&app_id=kiFe1HYbzqFRuMeKl1f3&app_code=yBj_wLCOe9Iw3Fbcf0S-kg"));
 
         for (let item of requestData.results.items) {
-
-            console.log(item);
             if (typesList.length > 0) {
                 if (item.tags) {
                     for (let type of typesList) {
@@ -50,7 +48,7 @@ function findRandomRestaurant() {
                                 let obj = {
                                     name: item.title,
                                     address: item.vicinity,
-                                    isOpen: item.isOpen,
+                                    isOpen: item.openingHours.isOpen,
                                     longitude: item.position[0],
                                     latitude: item.position[1]
                                 }
@@ -64,10 +62,10 @@ function findRandomRestaurant() {
                     let obj = {
                         name: item.title,
                         address: item.vicinity,
-                        isOpen: item.isOpen,
                         longitude: item.position[0],
                         latitude: item.position[1]
                     }
+                    if (item.openingHours) obj.isOpen = item.openingHours.isOpen;
                     potentialRestaurants.push(obj);
                 }
             }
