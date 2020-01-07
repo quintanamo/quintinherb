@@ -6,7 +6,7 @@ function expandDescription(project) {
             document.getElementById(active).style.maxHeight = "0px";
             document.getElementById(active).style.padding = "0px 14px";
         }
-        document.getElementById(project).style.maxHeight = "200px";
+        document.getElementById(project).style.maxHeight = "400px";
         document.getElementById(project).style.padding = "14px";
         active = project;
     } else {
