@@ -137,16 +137,11 @@ html, body {
     box-sizing: border-box;
     background-color: #dddddd;
     transition: 1s ease;
-    height: 0px;
+    max-height: 0px;
     overflow: hidden;
-    padding: 0 15px;
+    padding: 0px 14px;
     text-align: justify;
     position: relative;
-}
-
-.active {
-    height: 200px !important;
-    padding: 15px !important;
 }
 
 .about-table, .contact-table {
@@ -211,10 +206,10 @@ html, body {
 }
 
 .demo-link {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    display: block;
+    width: 100%;
+    padding: 6px 0;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) { 
