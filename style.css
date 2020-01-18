@@ -136,7 +136,7 @@ html, body {
     margin-top: -5px;
     box-sizing: border-box;
     background-color: #dddddd;
-    transition: 0.7s ease;
+    transition: 0.7s;
     max-height: 0px;
     overflow: hidden;
     padding: 0px 14px;
