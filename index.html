@@ -1,147 +1,295 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Quintin Herb | Web Developer</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
+<html lang="en">
 
-        <div class="page-header">
-            <div class="header-content">
-                <h1>Hi, I'm Q<div id="animate-header">uintin</div></h1>
-                <div class="header-description">Let's build a vision together.</div>
-                <a href="#learn-more" class="header-button space-right">Learn More</a>
-                <a href="#contact" class="header-button">Contact</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Quintin Herb - Developer</title>
+</head>
+
+<body>
+
+    <div id="newnavbar">
+        <a href="#"><h1>Quintin Herb</h1></a>
+        <div id="navlinks">
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#about">About Me</a>
+        </div>
+    </div>
+
+    <div id="splash">
+        <div id="navbar">
+            <h1>Quintin Herb</h1>
+            <div id="navlinks">
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#about">About Me</a>
             </div>
         </div>
 
-        <div class="section" id="learn-more">
-            <h1>Languages I've Used</h1>
-            <hr>
-            <div class="languages-wrapper">
-                <div class="language-bar" style="width: 100%; background-color: #E54D26;">HTML</div>
-                <div class="language-bar" style="width: 98%; background-color: #3799D6;">CSS</div>
-                <div class="language-bar" style="width: 90%; background-color: #F1DA4E;">JavaScript</div>
-                <div class="language-bar" style="width: 79%; background-color: #3775A8;">Python</div>
-                <div class="language-bar" style="width: 70%; background-color: #639AD2;">C/C++</div>
-                <div class="language-bar" style="width: 85%; background-color: #672179;">C#</div>
-                <div class="language-bar" style="width: 95%; background-color: #E4312A;">Java</div>
-                <div class="language-bar" style="width: 80%; background-color: #777DB1;">PHP</div>
+        <div id="welcome">
+            <h1>Let's build <br>something<br>awesome.<br><div id="caption">Software engineer and<br>computer science student</div></h1>
+            <a href="#skills" class="button">Learn More</a>
+        </div>
+    </div>
+
+    <div class="section" id="skills">
+        <h1>Skills</h1>
+        <div class="skillbox">
+            <img src="images/icons8-monitor-100.png">
+            <h1>Front-End Development</h1>
+            <div class="skills">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JavaScript</div>
+            </div>
+        </div>
+        <div class="skillbox">
+            <img src="images/icons8-server-100.png">
+            <h1>Back-End Development</h1>
+            <div class="skills">
+                <div>PHP</div>
+                <div>Java</div>
+                <div>MySQL</div>
+                <div>Kotlin</div>
+            </div>
+        </div>
+        <div class="skillbox">
+            <img src="images/icons8-software-100.png">
+            <h1>Software Engineering</h1>
+            <div class="skills">
+                <div>Python</div>
+                <div>C/C++</div>
+                <div>Java</div>
+                <div>C#</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="projects">
+        <h1>Projects</h1>
+        <div class="projectbox">
+            <h1>YCAS Radio Telescope<div class="timeframe">2020-2021</div></h1>
+            <div class="description">
+                <p>
+                    The York County Astronomical Society Radio Telescope project is currently being developed by York
+                College of Pennsylvania students enrolled in the senior software design course. The aim of the project
+                is to deliver real-world experience to students by exposing them to communication between both clients
+                and teammates as well as serving as a joint operation between software engineers and mechanical
+                engineers. There are five subteams within the software side of the project: control room, front-end,
+                back-end, mobile, and VR, which must all work together to deliver a functional, satisfactory product.
+                </p>
+                <p>
+                    My involvement with the project began as a junior computer science student seeking opportunities that
+                    allow me to challenge myself. My advisor recommended that I join the team as an independent study
+                    student that will perform the same duties as my peers who are enrolled in the actual course so that I
+                    may assist where help is needed and facilitate the transition into the next year's senior software
+                    design team as a team lead. I belong to the back-end subteam where I help maintain the project's
+                    database to provide functionality and analytics to other subteams and the clients.
+                </p>
+            </div>
+            <div class="skills">
+                <div>Kotlin</div>
+                <div>MySQL</div>
             </div>
         </div>
 
-        <div class="section">
-            <h1>My Projects</h1>
-            <hr>
-            <div class="projects-wrapper">
-                <div class="project-button" onclick="expandDescription('shift-cipher-solver', this)">Shift Cipher Solver<div class="expand-section">+</div></div>
-                <div class="project-description" id="shift-cipher-solver">
-                    <b>Language: </b>Python<br>
-                    <b>Time Completed: </b>Winter 2020<br>
-                    <b>Description:</b><br>
-                    A small yet effective Python program developed to assist myself with a Cryptology homework assignment.  The program generates cipher text based on a number of possible shifts and iterates through a list of 10,000 common English words to find potential matches, similarly to breaking a running-key cipher.
-                </div>
-                <div class="project-button" onclick="expandDescription('arsenal-tracker', this)">Arsenal Tracker<div class="expand-section">+</div></div>
-                <div class="project-description" id="arsenal-tracker">
-                    <b>Language: </b>Python<br>
-                    <b>Time Completed: </b>Winter 2020<br>
-                    <b>Description:</b><br>
-                    A Raspberry Pi project that implements Python libraries to get and parse HTML from Arsenal's webpages to keep an updated visualization of their current scores.  LEDs controlled by the Pi's GPIO output visualize if Arsenal is winning, losing, drawing, and if the status is from a live game.
-                </div>
-                <div class="project-button" onclick="expandDescription('find-us-food', this)">Find Us Food<div class="expand-section">+</div></div>
-                <div class="project-description" id="find-us-food">
-                    <b>Language: </b>HTML, CSS, JavaScript<br>
-                    <b>Time Completed: </b>Fall 2019<br>
-                    <b>Description:</b><br>
-                    A basic random restaurant selector that utilizes HERE's mapping API developed for York College of PA's 2019 hackathon.  The webpage will return a random restaurant within a given area based on the entered postal code and selected filters.  It will also return the address of the restaurant.
-                    <a href="https://quintinherb.net/FindUsFood" class="demo-link">Try it</a>
-                </div>
-                <div class="project-button" onclick="expandDescription('paint-program', this)">Paint Program<div class="expand-section">+</div></div>
-                <div class="project-description" id="paint-program">
-                    <b>Language: </b>C#<br>
-                    <b>Time Completed: </b>Spring 2019<br>
-                    <b>Description:</b><br>
-                    A simple sandbox paint application developed for a software engineering class project.  The user may change the shape, size, and color of their brush in addition to changing and clearing the background color.  The user may undo or redo their moves and may save their work when they're finished.
-                    <a href="https://quintinherb.net/downloads/projects/PaintByQuintin.zip" class="demo-link">Try it</a>
-                </div>
-                <div class="project-button" onclick="expandDescription('my-record-collection', this)">My Record Collection<div class="expand-section">+</div></div>
-                <div class="project-description" id="my-record-collection">
-                    <b>Language: </b>Java<br>
-                    <b>Time Completed: </b>Spring 2019<br>
-                    <b>Description:</b><br>
-                    A user-friendly record categorizor that keeps track of the catalog numbers, album titles, artist names, and years released of each record.  The user is easily able to add new records as well as delete existing ones.  The user may sort by album title, artist name, or year released.
-                    <a href="https://quintinherb.net/downloads/projects/MyRecordCollection.zip" class="demo-link">Try it</a>
-                </div>
-                <div class="project-button" onclick="expandDescription('virtual-keyboard', this)">Virtual Keyboard<div class="expand-section">+</div></div>
-                <div class="project-description" id="virtual-keyboard">
-                    <b>Language: </b>JavaScript<br>
-                    <b>Time Completed: </b>Summer 2019<br>
-                    <b>Description:</b><br>
-                    A pure vanilla JavaScript implementation of a virtual keyboard that gets generated at the user's discretion by automatically populating an element with a specified classname.  Each virtual keyboard will automatically link itself to whichever input box the user clicks.
-                    <a href="https://github.com/quintanamo/virtual-keyboard" class="demo-link">Try it</a>
-                </div>
-                <div class="project-button" onclick="expandDescription('hackman', this)">Hackman<div class="expand-section">+</div></div>
-                <div class="project-description" id="hackman">
-                    <b>Language: </b>QBasic<br>
-                    <b>Time Completed: </b>Fall 2018<br>
-                    <b>Description:</b><br>
-                    An experimental project to explore MS-DOS.  In the game, the user tries to guess a secret word by receiving hints for how close they are to the actual word.  For example, if the player guesses "ACE" and the worde is "APE", the likeness would display "2" for the "A" and "E".
-                    <a href="https://quintinherb.net/downloads/projects/Hackman.zip" class="demo-link">Try it</a>
-                </div>
-                <div class="project-button" onclick="expandDescription('disc-game', this)">Disc Game<div class="expand-section">+</div></div>
-                <div class="project-description" id="disc-game">
-                    <b>Language: </b>Java<br>
-                    <b>Time Completed: </b>Fall 2018<br>
-                    <b>Description:</b><br>
-                    A fundamentals of computer science class project to explore object-oriented programming concepts.  The player tries to place as many discs in a given space as possible.  The time to place a disc is decreased with each placement.  The player's score is displayed upon losing.
-                    <a href="https://quintinherb.net/downloads/projects/DiscGame.jar" class="demo-link">Try it</a>
-                </div>
+        <div class="projectbox">
+            <h1>Random Shift Cracker<div class="timeframe">2020</div></h1>
+            <div class="description">
+                <p>
+                    In my cryptology course, I was tasked with deciphering various texts that were ciphered by shifting a
+                    given letter within a given range. For example, if a message is "salad" and each letter may be shifted
+                    0-4 places, one possible encipherment is "uanbg". While it is easier to decipher the message when the
+                    range is small, such as 0-2, doing larger ranges by hand becomes time-consuming and patterns become
+                    difficult to find.
+                </p>
+                <p>
+                    My solution to this was to first create a Python script that read 40 public domain books and keep count
+                    of how often each word in each text appears with a dictionary. This allowed me to find commonly used
+                    words across all 40 books with the intention that such common words could potentially appear in the
+                    enciphered messages. To filter out words with low numbers of occurrences, I simply took the top 10,000
+                    words by appearance count. After writing the word list to a text file, I made a second script that takes an input of an enciphered message and the maximum range of shifts that were used when enciphering it.  The script then generated shifted alphabets and searched for patterns that match potential words at a given letter.  The script would then keep track of the letter each potential word match was found at and then output it in an appropriate position for easy reading.  This was a very successful project as it helped find word matches that were perhaps too large to be a coincidence and which lead to deciphering the texts.
+                </p>
+            </div>
+            <div class="skills">
+                <div>Python</div>
             </div>
         </div>
 
-        <div class="section">
-            <h1>About Me</h1>
-            <hr>
-            <img src="images/selfie.jpg" alt="If you can see this, something broke lol" class="responsive-selfie">
-            <table class="about-table">
-                <tr>
-                    <td class="left"><img src="images/selfie.jpg" alt="If you can see this, something broke lol"></td>
-                    <td class="right">
-                        My name is Quintin, and I am currently a full-time computer science student at York College of Pennsylvania.  I thoroughly enjoy devoting my time to the major and take every chance I can get to be involved with computer science outside of the classroom.<br>
-                        <br>I currently devote my free time to tutoring various computer science classes to both help those who need it in addition to refining my skills.  Between semesters, I like to take on personal projects, most of which can be found on this site.<br>
-                    </td>
-                </tr>
-            </table>
+        <div class="projectbox">
+            <h1>Arsenal Tracker<div class="timeframe">2019</div></h1>
+            <div class="description">
+                <p>
+                    With a Raspberry Pi, my curiosity grew in awe at the potential a computer the size of a credit card held.  I decided to combine two of my strongest passions with it:  programming and soccer.  This project would utilize the Rasbperry Pi's GPIO to light up LEDs based on the current match status of my favorite soccer team Arsenal.  The script on the Pi would request score data from Arsenal's website and output Arsenal's status in their latest match and output a visualization of the status using four LEDs.  A green LED indicates that they are winning, yellow indicates drawing, and red indicates losing.  Since a match isn't being played at every hour of the day (how exhausting that would be), a blue LED indicates if the status is from a live match, otherwise, it is the last match's status.
+                </p>
+            </div>
+            <div class="skills">
+                <div>Python</div>
+            </div>
         </div>
 
-        <div class="section" id="contact">
-            <h1>Contact</h1>
-            <hr>
-            <table class="contact-table">
-                <tr>
-                    <td class="left"><img src="images/email.png"></td>
-                    <td class="right"><a href="mailto:quintin@quintinherb.net">quintin@quintinherb.net</a></td>
-                </tr>
-                <tr>
-                    <td class="left"><img src="images/instagram.png"></td>
-                    <td class="right"><a href="https://www.instagram.com/realquintanamo/">realquintanamo</a></td>
-                </tr>
-                <tr>
-                    <td class="left"><img src="images/linkedin.png"></td>
-                    <td class="right"><a href="https://www.linkedin.com/in/quintinherb">Quintin Herb</a></td>
-                </tr>
-            </table>
+        <div class="projectbox">
+            <h1>Find Us Food<div class="timeframe">2019</div></h1>
+            <div class="description">
+                <p>
+                    Find Us Food is a simple webpage that utilizes HERE's mapping API to find a random restaurant within a given radius.  This project was independently developed and presented by myself for York College of Pennsylvania's 2019 Hackathon.  A user may enter the postal code of the area they would like to eat and filter restaurant types to suit their interests.  For example, if I was interested in only burger joints, pizza places, or fast food, I can use the checkboxes provided to find restaurants that fit that exact criteria.  A live example of the project can be found at <a href="https://quintinherb.net/FindUsFood">quintinherb.net/FindUsFood</a>.
+                </p>
+            </div>
+            <div class="skills">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JavaScript</div>
+            </div>
         </div>
 
-        <div class="footer">
-            &copy; Quintin Herb<br>
-            quintin@quintinherb.net
+        <div class="projectbox">
+            <h1>Paint By Quintin<div class="timeframe">2019</div></h1>
+            <div class="description">
+                <p>
+                    For my software engineering course, I had to take on a personal project and a team project.  For my personal projected, I decided to make a simple doodle application to learn C#.  In my painting program, the user has the ability to adjust their brush shape and size while also choosing their brush color and canvas background.  The user may undo and redo their changes and save their work whenever they are finished.  If you would like to try it yourself, you may download it for Windows <a href="https://quintinherb.net/downloads/projects/PaintByQuintin.zip">here</a>.
+                </p>
+            </div>
+            <div class="skills">
+                <div>C#</div>
+            </div>
         </div>
 
-        
-        <script src="scripts/animate-header.js"></script>
-        <script src="scripts/expand-project.js"></script>
-    </body>
+        <div class="projectbox">
+            <h1>EntreLink<div class="timeframe">2019</div></h1>
+            <div class="description">
+                <p>
+                    For my software engineering course, I had to take on a personal project and a team project.  For the team project, my group worked on a web application that allows students within the college to share their skills and ideas to collaborate on a project.  For example, if a student wants to make a mobile app to find vending machines on campus but doesn't know how, they may seek another student on the website who has mobile app development experience to help work on it.  Students were able to create profiles displaying their interests and skills while also posting proposals either seeking help with a project or seeking to help somebody who needs it.  They could also directly message a student from the post they found.
+                </p>
+            </div>
+            <div class="skills">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JavaScript</div>
+                <div>Java</div>
+                <div>MySQL</div>
+            </div>
+        </div>
+
+        <div class="projectbox">
+            <h1>My Record Collection<div class="timeframe">2019</div></h1>
+            <div class="description">
+                <p>
+                    To categorize my records, I developed a Java program that provided an interface I could use to add, remove, and sort records I owned.  The program implemented custom comparators so I could sort by album titles, artist names, album release years, and catalog numbers.  It also had a search feature so I could find records by either title or artist.  If you are interested, you may download it <a href="https://quintinherb.net/downloads/projects/MyRecordCollection.zip">here</a> on all platforms with Java installed.
+                </p>
+            </div>
+            <div class="skills">
+                <div>Java</div>
+            </div>
+        </div>
+
+        <div class="projectbox">
+            <h1>Virtual Keyboard<div class="timeframe">2019</div></h1>
+            <div class="description">
+                <p>
+                    As an experiment, I wanted to develop an on-screen keyboard that could be depoloyed on a web page.  Once I was able to add text to inputs from the virtual keyboard, I wanted to expand it in case others were interested in using it.  Once the appropriate files are added to the project and linked, just a single line of HTML will automatically insert the virtual keyboard wherever the user put it in addition to automatically linking it with the textboxes on the page.  If you are interested, you may find out how to use it <a href="https://github.com/quintanamo/virtual-keyboard">here</a>.
+                </p>
+            </div>
+            <div class="skills">
+                <div>JavaScript</div>
+                <div>CSS</div>
+            </div>
+        </div>
+
+        <div class="projectbox">
+            <h1>Hackman<div class="timeframe">2018</div></h1>
+            <div class="description">
+                <p>
+                    Being a self-proclaimed dork, I wanted to try developing a program that could run on MS-DOS using QBasic.  Using a computer with MS-DOS installed on it, I developed a game where a player tries to guess a random secret word of a given length depending on the difficulty they selected.  For example, an easy word would consist of only three letters, and the user must make a guess with that knowledge.  After each guess, the game will provide hints indicating if a letter in the guess matches with the actual word.  For example, if the word is "ACE" and the user guessed "ARK", the game will indicate a single match since A appears in the same position for both the guess and the answer.  If you are interested in playing, you may download it for MS-DOS <a href="https://quintinherb.net/downloads/projects/Hackman.zip">here</a>.
+                </p>
+            </div>
+            <div class="skills">
+                <div>QBasic</div>
+            </div>
+        </div>
+
+        <div class="projectbox">
+            <h1>Disc Game<div class="timeframe">2018</div></h1>
+            <div class="description">
+                <p>
+                    For my fundamentals of computer science course, we were tasked with making a simple game that is played by placing discs on the screen within an allotted amount of time.  The user may not overlap discs or place them out of bounds.  Following these constraints, I explored ways to make it more appealing by decreasing the time allowed to place a disk after each one is placed along with other design improvements.  If you are interested in playing, you may download it  <a href="https://quintinherb.net/downloads/projects/DiscGame.jar">here</a> on all platforms with Java installed.
+                </p>
+            </div>
+            <div class="skills">
+                <div>QBasic</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section" id="experience">
+        <h1>Experience</h1>
+        <div class="projectbox">
+            <h1>KioWare<div class="timeframe">2019-2020</div></h1>
+            <div class="description">
+                <p>
+                    As an intern at KioWare, I worked on developing widgets for KioWare Server and experimented with making applications for KioWare for Android.  The widgets provided analytical data for kiosk units on three separate levels:  an individual kiosk, a group of kiosks, and all kiosks within a domain.  This provided useful data for kiosk owners so they can identify how to improve their services.
+                </p>
+            </div>
+            <div class="skills">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JavaScript</div>
+                <div>Java</div>
+                <div>C#</div>
+            </div>
+        </div>
+
+        <div class="projectbox">
+            <h1>Johnson Controls<div class="timeframe">2019</div></h1>
+            <div class="description">
+                <p>
+                    As an intern at Johnson Controls, I worked on developing the next generation of touchscreen interfaces on chiller units.  This entialed converting the current implimentation into a new architecture while documenting each new addition to the project.  My duties also required deployment onto a simulated panel to test user interaction.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="about">
+        <h1>About Me</h1>
+        <div class="projectbox">
+            <div class="description">
+                <img src="images/selfie.jpg">
+                <p>
+                    I am currently studying computer science at York College of Pennsylvania.  I work as a tutor for various computer science courses and enjoy helping others as much as I can.  When possible, I try to seek out new and exciting things to learn about whether its related to computer science or my other hobbies.  Outside of the classroom, I enjoy watching Premier League soccer, listening to music, going to Taco Bell, and coin collecting.  
+                </p>
+            </div>
+        </div>
+        <table id="contact-table">
+            <tr>
+                <td class="left"><a href="mailto:quintin@quintinherb.net"><img src="images/email.png"></a></td>
+                <td class="right"><a href="mailto:quintin@quintinherb.net">quintin@quintinherb.net</a></td>
+            </tr>
+            <tr>
+                <td class="left"><a href="https://www.linkedin.com/in/quintinherb"><img src="images/linkedin.png"></a></td>
+                <td class="right"><a href="https://www.linkedin.com/in/quintinherb">Quintin Herb</a></td>
+            </tr>
+            <tr>
+                <td class="left"><a href="https://www.instagram.com/realquintanamo/"><img src="images/instagram.png"></a></td>
+                <td class="right"><a href="https://www.instagram.com/realquintanamo/">realquintanamo</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="footer">
+        Quintin Herb<br>
+        Computer Science Student<br>
+        Software Engineer<br>
+        &copy;2020
+    </div>
+
+
+    <script src="scripts/navbar.js"></script>
+</body>
+
 </html>
