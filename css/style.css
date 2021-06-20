@@ -81,6 +81,33 @@ footer {
     display: block;
 }
 
+.language-bubble {
+    background-color: #efefef;
+    border-radius: 100px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    font-size: 10pt;
+}
+
+.language-bubble:not(:first-child) {
+    margin-left: 10px;
+}
+
+.list-group-item {
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background-color: #f7f7f7;
+}
+
+#modalLanguages {
+    box-sizing: border-box;
+    padding: 4px 12px;
+    padding-bottom: 24px;
+}
+
 @media only screen and (max-width: 600px) {
     .header-section {
         padding-bottom: 4rem;
