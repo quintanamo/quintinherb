@@ -87,10 +87,8 @@ footer {
     box-sizing: border-box;
     padding: 5px 10px;
     font-size: 10pt;
-}
-
-.language-bubble:not(:first-child) {
-    margin-left: 10px;
+    margin: 5px;
+    display: inline-block;
 }
 
 .list-group-item {
@@ -104,8 +102,7 @@ footer {
 
 #modalLanguages {
     box-sizing: border-box;
-    padding: 4px 12px;
-    padding-bottom: 24px;
+    padding: 4px;
 }
 
 @media only screen and (max-width: 600px) {
