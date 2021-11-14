@@ -59,7 +59,7 @@ const projects = [
         date: 'Spring 2019',
         description: '<p class="card-text"> For my software engineering course, I had to take on a personal project and a team project. For my personal projected, I decided to make a simple doodle application to learn C#. In my painting program, the user has the ability to adjust their brush shape and size while also choosing their brush color and canvas background. The user may undo and redo their changes and save their work whenever they are finished. </p>',
         github: 'https://github.com/quintanamo/PaintProgram',
-        download: 'https://quintin herb.net/downloads/projects/PaintByQuintin.zip',
+        download: 'https://quintinherb.net/downloads/projects/PaintByQuintin.zip',
         view: ''
     },
     {
@@ -189,7 +189,7 @@ function showProjectModal(project) {
     if (project.download.length > 0) {
         $("#modalFooter").show();
         $("#downloadLink").show();
-        $("#githubLink").prop("href", project.download);
+        $("#downloadLink").prop("href", project.download);
     }
     if (project.view.length > 0) {
         $("#modalFooter").show();
