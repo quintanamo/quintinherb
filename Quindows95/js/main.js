@@ -173,6 +173,16 @@ function putWindowOnTop(id) {
 		}
 	}
 	selectedWindow.style.zIndex = newIndex;
+	setObjectElementPointerEvents(selectedWindow.id + "-object");
+}
+
+function setObjectElementPointerEvents(id) {
+	let objects = document.getElementsByTagName("object");
+	for (let object of objects) {
+		object.style.pointerEvents = "none";
+	}
+	let updateObject = document.getElementById(id);
+	updateObject.style.pointerEvents = "auto";
 }
 
 function closeWindow(id) {
@@ -269,7 +279,7 @@ function openApplication(key) {
 	// create window content
 	let windowContent = document.createElement("div");
 	windowContent.classList.add("window-content");
-	windowContent.innerHTML = '<object type="text/html" data="' + application.content + '" style="width: 100%; height: 100%;"></object>'
+	windowContent.innerHTML = '<object type="text/html" id="' + newWindow.id + '-object" data="' + application.content + '" style="width: 100%; height: 100%;"></object>'
 
 	// append window content to window
 	newWindow.appendChild(windowContent);
