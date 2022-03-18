@@ -19,7 +19,10 @@ function dragElement(element) {
 		pos4 = e.clientY;
 		document.onmouseup = closeDragElement;
 		// call a function whenever the cursor moves:
-		document.onmousemove = elementDrag;
+		if (!(element.classList.contains("maximized") || e.target.classList.contains("window-header-button")))
+		{
+			document.onmousemove = elementDrag;
+		}
 	}
 
   	function elementDrag(e) {
@@ -124,7 +127,6 @@ function selectDesktop(e) {
 function updateSelectedWindow(window) {
 	inactivateAllTaskbarButtons();
 	let taskbarButton = document.getElementById(window.id + "-tab");
-	console.log(window, taskbarButton);
 	taskbarButton.classList.add("active");
 	putWindowOnTop(window.id);
 }
@@ -260,7 +262,7 @@ function openApplication(key) {
 	// create close button
 	let windowClose = document.createElement("div");
 	windowClose.classList.add("window-header-button");
-	windowClose.setAttribute("onMouseUp", "javascript: closeWindow('" + newWindow.id + "');" );
+	windowClose.setAttribute("onClick", "javascript: closeWindow('" + newWindow.id + "');" );
 	windowClose.textContent = "✖";
 	windowHeader.appendChild(windowClose);
 
@@ -268,7 +270,7 @@ function openApplication(key) {
 	if (application.canResize) {
 		let windowMax = document.createElement("div");
 		windowMax.classList.add("window-header-button");
-		windowMax.setAttribute("onMouseDown", "javascript: maxWindow('" + newWindow.id + "', this);" );
+		windowMax.setAttribute("onClick", "javascript: maxWindow('" + newWindow.id + "', this);" );
 		windowMax.textContent = "☐";
 		windowHeader.appendChild(windowMax);
 	} else {
@@ -278,7 +280,7 @@ function openApplication(key) {
 	// create hide button
 	let windowHide = document.createElement("div");
 	windowHide.classList.add("window-header-button");
-	windowHide.setAttribute("onMouseDown", "javascript: hideWindow('" + newWindow.id + "');" );
+	windowHide.setAttribute("onClick", "javascript: hideWindow('" + newWindow.id + "');" );
 	windowHide.textContent = "_";
 	windowHeader.appendChild(windowHide);
 

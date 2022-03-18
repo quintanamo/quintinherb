@@ -204,6 +204,15 @@ html, body {
     margin-left: 4px;
 }
 
+/*.window-header-button:active {
+    border-top: 1px solid #828282;
+    border-left: 1px solid #828282;
+    border-right: 1px solid #c3c3c3;
+    border-bottom: 1px solid #c3c3c3;
+    box-shadow: -1px -1px 0px  #000000, 0px 0px 0px 1px #ffffff;
+    background-color: green;
+}*/
+
 .window-content {
     width: 100%;
     height: calc(100% - 30px);
