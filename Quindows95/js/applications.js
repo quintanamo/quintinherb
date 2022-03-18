@@ -8,3 +8,13 @@ applications["quintinherb.net"] = {
     defaultHeight: "600px",
     canResize: true
 };
+
+applications["about-me"] = {
+    name: "About Me",
+    title: "About Me",
+    content: "templates/about-me.html",
+    defaultWidth: "600px",
+    defaultHeight: "400px",
+    canResize: false,
+    disableScroll: true
+};

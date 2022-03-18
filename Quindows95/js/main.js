@@ -264,12 +264,16 @@ function openApplication(key) {
 	windowClose.textContent = "✖";
 	windowHeader.appendChild(windowClose);
 
-	// create maximize button
-	let windowMax = document.createElement("div");
-	windowMax.classList.add("window-header-button");
-	windowMax.setAttribute("onMouseDown", "javascript: maxWindow('" + newWindow.id + "', this);" );
-	windowMax.textContent = "☐";
-	windowHeader.appendChild(windowMax);
+	// create maximize button if canresize
+	if (application.canResize) {
+		let windowMax = document.createElement("div");
+		windowMax.classList.add("window-header-button");
+		windowMax.setAttribute("onMouseDown", "javascript: maxWindow('" + newWindow.id + "', this);" );
+		windowMax.textContent = "☐";
+		windowHeader.appendChild(windowMax);
+	} else {
+		newWindow.style.resize = "none";
+	}
 
 	// create hide button
 	let windowHide = document.createElement("div");
