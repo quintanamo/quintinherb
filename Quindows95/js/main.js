@@ -114,6 +114,11 @@ function selectDesktop(e) {
 	if (e !== null && e.target == desktop) {
 		inactivateAllTaskbarButtons();
 	}
+	let startMenu = document.getElementById("start-menu");
+	let startButton = document.getElementById("start-button");
+	if (e !== null && (e.target != startMenu && !startMenu.contains(e.target)) && (e.target != startButton && !startButton.contains(e.target))) {
+		closeStartMenu();
+	}
 }
 
 function updateSelectedWindow(window) {
@@ -306,4 +311,27 @@ function openApplication(key) {
 	updateSelectedWindow(newWindow);
 
 	currWindowID++;
+}
+
+function openApplicationFromStartMenu(key) {
+	openApplication(key);
+	closeStartMenu();
+}
+
+function toggleStartMenu() {
+	let startButton = document.getElementById("start-button");
+	if (!startButton.classList.contains("active")) {
+		let startMenu = document.getElementById("start-menu");
+		startMenu.style.display = "block";
+		startButton.classList.add("active");
+	} else {
+		closeStartMenu();
+	}
+}
+
+function closeStartMenu() {
+	let startMenu = document.getElementById("start-menu");
+	let startButton = document.getElementById("start-button");
+	startMenu.style.display = "none";
+	startButton.classList.remove("active");
 }
