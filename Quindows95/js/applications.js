@@ -6,7 +6,8 @@ applications["quintinherb.net"] = {
     content: "https://quintinherb.net",
     defaultWidth: "600px",
     defaultHeight: "600px",
-    canResize: true
+    canResize: true,
+    disableScroll: false
 };
 
 applications["about-me"] = {
