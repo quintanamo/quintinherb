@@ -15,7 +15,7 @@ applications["about-me"] = {
     title: "About Me",
     content: "templates/about-me.html",
     defaultWidth: "600px",
-    defaultHeight: "400px",
+    defaultHeight: "600px",
     canResize: false,
     disableScroll: true
 };
