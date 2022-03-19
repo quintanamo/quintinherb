@@ -307,7 +307,7 @@ function openApplication(key) {
 	taskbarButton.textContent = application.title;
 
 	// append taskbar button to footer
-	let footer = document.getElementById("footer");
+	let footer = document.getElementById("taskbar-buttons");
 	footer.appendChild(taskbarButton);
 
 	// make window draggable
