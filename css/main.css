@@ -16,6 +16,19 @@ html {
   letter-spacing: 0.15rem;
 }
 
+@media (max-width: 37.5em) {
+  .primary-header {
+    font-size: 4rem;
+  }
+  .secondary-header {
+    font-size: 1.4rem;
+    letter-spacing: 0.08rem;
+  }
+  .tertiary-header {
+    font-size: 3rem;
+  }
+}
+
 .tertiary-header {
   font-size: 4rem;
 }
@@ -320,6 +333,12 @@ html {
   }
   100% {
     background-color: rgba(0, 0, 0, 0.85);
+  }
+}
+
+@media (max-width: 37.5em) {
+  .project-modal {
+    width: 90%;
   }
 }
 
