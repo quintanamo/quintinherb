@@ -2,6 +2,10 @@ html {
   font-family: 'Nunito', sans-serif;
 }
 
+html, body {
+  background-color: #f2f2f2;
+}
+
 .primary-header, .secondary-header {
   font-family: 'Comfortaa', cursive;
 }
