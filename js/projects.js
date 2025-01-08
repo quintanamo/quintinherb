@@ -1,46 +1,18 @@
-let modal = document.getElementById("modal");
-let modalWrapper = document.getElementById("modal-wrapper");
-let modalTitle = document.getElementById("modal-title");
-let modalBody = document.getElementById("modal-body");
-let modalLanguages = document.getElementById("modal-langauges-box");
-
-function openModal(project) {
-    modalWrapper.style.display = "block";
-    populateModal(project);
-}
-
-function closeModal() {
-    modalWrapper.style.display = "none";
-}
-
-function populateModal(projectName) {
-    let project = projects[projectName];
-    modalTitle.textContent = project.name;
-    modalBody.innerHTML = project.description;
-    modalLanguages.innerHTML = "";
-    for (language of project.languages) {
-        let languageSpan = document.createElement("span");
-        languageSpan.className = "project-modal__language";
-        languageSpan.textContent = language;
-        modalLanguages.appendChild(languageSpan);
-    }
-}
-
-const projects = {
-    /*{
-        name: 'YCAS Radio Telescope',
-        languages: ['Kotlin', 'C#', 'HTML', 'CSS', 'JavaScript'],
-        date: 'Spring 2020 - Spring 2021',
-        description: '',
-        github: '',
+const PROJECTS = {
+    'Algorithms in Rust': {
+        name: 'Algorithms in Rust',
+        languages: ['Rust'],
+        date: '2024',
+        description: 'I was interested in learning Rust and wanted to brush up on some of the algorithms I learned in college, so I migrated some old projects into a consolidated Rust project with automated unit testing via GitHub Actions.',
+        github: 'https://github.com/quintanamo/algorithms-in-rust',
         download: '',
         view: ''
-    },*/
+    },
     'Quindows95': {
         name: 'Quindows95',
         languages: ['HTML', 'CSS', 'JavaScript'],
         date: '2022',
-        description: 'I decided to try to replicate the design of Windows 95 within a web page as a fun, lighthearted vanity project.  I may continue to add "applications" to it as time goes on if I ever need a quick project to fill my spare time.  View it <a href="https://quintinherb.net/Quindows95">here<a/>.',
+        description: 'I decided to try to replicate the design of Windows 95 within a web page as a fun, lighthearted vanity project.  I may continue to add "applications" to it as time goes on if I ever need a quick project to fill my spare time.',
         github: '',
         download: '',
         view: 'https://quintinherb.net/Quindows95'
@@ -49,10 +21,10 @@ const projects = {
         name: 'Checkbox Snake',
         languages: ['HTML', 'CSS', 'JavaScript'],
         date: '2021',
-        description: 'I randomly got the idea to remake the iconic game Snake entirely with checkboxes.  The game is represented by checkboxes in various states such as the background being plain checkboxes, the snake being disabled checkboxes, and the fruit being checked checkboxes.  View it <a href="https://quintinherb.net/snake">here<a/>.',
+        description: 'I randomly got the idea to remake the iconic game Snake entirely with checkboxes.  The game is represented by checkboxes in various states such as the background being plain checkboxes, the snake being disabled checkboxes, and the fruit being checked checkboxes.',
         github: '',
         download: '',
-        view: ''
+        view: 'https://quintinherb.net/snake'
     },
     'YCAS Radio Telescope': {
         name: 'YCAS Radio Telescope',
@@ -136,3 +108,74 @@ const projects = {
         view: ''
     },
 };
+
+
+const PROJECTS_GRID = document.getElementById('projects-grid');
+const PROJECT_MODAL = document.getElementById('project-modal');
+const PROJECT_MODAL_TITLE = document.getElementById('project-modal-title');
+const PROJECT_MODAL_LANGUAGES = document.getElementById('project-modal-languages');
+const PROJECT_MODAL_BODY = document.getElementById('project-modal-body');
+const PROJECT_MODAL_BUTTONS = document.getElementById('project-modal-buttons');
+
+function populateProjects() {
+
+    for (let project in PROJECTS) {
+        let projectBtn = document.createElement('button');
+        projectBtn.classList.add('project-card');
+        projectBtn.textContent = project;
+        projectBtn.addEventListener('click', () => openProjectModal(project));
+        PROJECTS_GRID.appendChild(projectBtn);
+    }
+}
+
+function openProjectModal(project) {
+    const projectObj = PROJECTS[project];
+    PROJECT_MODAL_TITLE.textContent = projectObj.name;
+    PROJECT_MODAL_BODY.textContent = projectObj.description;
+
+    PROJECT_MODAL_LANGUAGES.textContent = '';
+    if (projectObj.languages.length > 0) {
+        for (let language of projectObj.languages) {
+            let languageEl = document.createElement('span');
+            languageEl.textContent = language;
+            PROJECT_MODAL_LANGUAGES.appendChild(languageEl);
+        }
+    }
+
+    PROJECT_MODAL_BUTTONS.textContent = '';
+    if (projectObj.github.length > 3) {
+        console.log('here');
+        let buttonEl = document.createElement('a');
+        buttonEl.classList.add('project-modal__button');
+        buttonEl.textContent = 'GitHub';
+        buttonEl.href = projectObj.github;
+        buttonEl.target = '_blank';
+        PROJECT_MODAL_BUTTONS.appendChild(buttonEl);
+    }
+    if (projectObj.download.length > 3) {
+        console.log('here');
+        let buttonEl = document.createElement('a');
+        buttonEl.classList.add('project-modal__button');
+        buttonEl.textContent = 'Download';
+        buttonEl.href = projectObj.download;
+        buttonEl.target = '_blank';
+        PROJECT_MODAL_BUTTONS.appendChild(buttonEl);
+    }
+    if (projectObj.view.length > 3) {
+        console.log('here');
+        let buttonEl = document.createElement('a');
+        buttonEl.classList.add('project-modal__button');
+        buttonEl.textContent = 'View';
+        buttonEl.href = projectObj.view;
+        buttonEl.target = '_blank';
+        PROJECT_MODAL_BUTTONS.appendChild(buttonEl);
+    }
+
+    PROJECT_MODAL.classList.add('project-modal--show');
+}
+
+function closeProjectModal() {
+    PROJECT_MODAL.classList.remove('project-modal--show');
+}
+
+populateProjects();
